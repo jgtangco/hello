@@ -105,13 +105,13 @@ b {
     font-weight: 500;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
+    color: #4C95E7;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #fff;
 }
 
 h1 {
@@ -124,10 +124,36 @@ h1 {
     font-weight: 700;
 }
 
+p {
+    margin: 10px auto 20px;
+}
+
+li + li {
+    margin-top: 6px;
+}
+
+h4 + p, h4 + ul {
+    margin: 5px auto 20px;
+}
+
+img {
+    border-bottom: 1px solid rgba(29,36,45,.2);
+    padding-bottom: 5px; 
+    margin-top: 10px;
+}
+
+img + img {
+    margin-top: 0;
+}
+
 #header, .project-thumb, #connect {
     text-align: center; 
     height: 320px;
     display: block;
+}
+
+.project-thumb {
+    height: 240px;
 }
 
 #header h1 {
@@ -150,13 +176,29 @@ h1 {
 
 .project-thumb {
     background-color: #4C95E7;
+    padding-top: 80px;
+}
+
+.project-thumb:hover, .project-thumb h2, .project-thumb i {
+    color: #fff;
+}
+
+.project-thumb .fa-circle {
+    color: #fff;
+}
+
+.project-thumb .fa-star {
+    color: #4C95E7;
+}
+
+.project-thumb:hover .fa-star {
+    color: #FFA500;
 }
 
 .project-thumb h2 {
     font-weight: 500;
     font-size: 1.2em;
-    color: #fff;
-    padding: 150px 0 0; 
+    padding: 0 0 0; 
     margin: 0;
 }
 
@@ -191,15 +233,47 @@ button:hover {
     color: #1D242D;
 }
 
-#redesigning-reviews {
-    background-image: url("../img/thumb_reviews.gif");
-}
-
-.caseStudy {
+.pageWidth {
     width: 700px;
     margin: 0 auto;
 }
 
+#breadcrumb {
+    height: 27px;
+    background-color: #1D242D;
+    color: #fff;
+    padding-top: 3px;
+}
+
+.projectPage h1 {
+    margin: 60px auto 0;
+}
+
+.projectPage h2 {
+    margin: 60px auto 0;
+}
+
+.projectPage h3 {
+    margin: 25px auto 0;
+    color: rgba(29,36,45,.8);
+}
+
+.projectPage h4 {
+    margin: 10px auto 0;
+    color: rgba(29,36,45,.6);
+    text-transform: uppercase;
+    font-size: .85em;
+}
+
+.caption {
+    margin-top: 6px;
+    font-size: .85em;
+    font-style: italic;
+}
+
+.caption + img {
+    margin-top: 40px;
+}
 
 
 

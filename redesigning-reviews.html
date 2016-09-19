@@ -15,7 +15,7 @@
         <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700italic|Raleway:300,500' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body class="caseStudy">
+    <body class="projectPage">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -23,153 +23,154 @@
         <!-- Add your site or application content here -->
         
         <div id="breadcrumb">
-            <a href="index.html">home</a> &raquo; redesigning reviews
+            <div class="pageWidth">
+                <a href="index.html">home</a> &raquo; redesigning reviews
+            </div>
         </div>
 
-        <h1>Redesigning Reviews</h1>
+        <div class="pageWidth">
+            <h1>Redesigning Reviews</h1>
 
-        <h2>Overview</h2>
-        <p>Imagine you own a bustling salon. As a business owner, quality customer service is a top priority. One of the best measures of your service is your online reputation via client reviews. To help service-based businesses manage their online reviews, Demandforce, a marketing and reputation managment SaaS, offers a reviews feature. Within this feature, a user's main tasks are to read and reply to client reviews. On occasion, a user may dispute offending reviews.</p>
-        <p>After several years of neglect, the reviews feature needed some UX tender love and care.</p>
+            <h2>Overview</h2>
+            <p>Imagine you own a bustling salon. As a business owner, quality customer service is a top priority. One of the best measures of your service is your online reputation via client reviews. To help service-based businesses manage their online reviews, Demandforce, a marketing and reputation managment SaaS, offers a reviews feature. Within this feature, a user's main tasks are to read and reply to client reviews. On occasion, a user may dispute offending reviews.</p>
+            <p>After several years of neglect, the reviews feature needed some UX tender love and care.</p>
 
-        <h3>My Role</h3>
-        <p>UX lead</p>
+            <h3>My Role</h3>
+            <p>UX lead</p>
 
-        <h2>Strategy</h2>
+            <h2>Strategy</h2>
 
-        <h3>Business Goal</h3>
-        <ul>
-            <li>Improve customer experience</li>
-        </ul>
+            <h3>Business Goal</h3>
+            <p>Improve customer experience</p>
 
-        <h3>Value Proposition</h3>
-        <p>Online reputation management is a differentiator for our product. Simple review management and reporting is a staple in our overall strategy. Therefore any improvements to our existing experience helps us stay competitive.</p>
+            <h3>Value Proposition</h3>
+            <p>Online reputation management is a differentiator for our product. Simple review management and reporting is a staple in our overall strategy. Therefore any improvements to our existing experience helps us stay competitive.</p>
 
-        <h3>Success Measurement</h3>
-        <h4>happiness</h4>
-        <p>As this is an existing feature, we will measure perceived ease of use after the redesign.</p>
+            <h3>Success Measurement</h3>
+            <h4>happiness</h4>
+            <p>As this is an existing feature, we will measure perceived ease of use after the redesign.</p>
 
-        <h2>Research I</h2>
+            <h2>Research I</h2>
 
-        <h3>Original Design</h3>
-        <img src="projects/redesigning-reviews/img/screenshot_tabBefore.jpg">
+            <h3>Original Design</h3>
+            <img src="projects/redesigning-reviews/img/screenshot_tabBefore.jpg">
 
-        <h3>Quantitative Findings</h3>
-        <p>Using Google Analytics and Mixpanel, my product manager found these metrics and behaviors:</p>
-        <h4>query-type dropdown</h4>
-        <ul>
-            <li>Alternate views only make up a whopping 0.42% of all pageviews.</li>
-            <li>The most popular query types are Featured reviews and Public reviews.</li>
-            <li>Detractors, promoters, and passives queries together only make up 0.17% of all pageviews.</li>
-        </ul>
+            <h3>Quantitative Findings</h3>
+            <p>Using Google Analytics and Mixpanel, my product manager found these metrics and behaviors:</p>
+            <h4>query-type dropdown</h4>
+            <ul>
+                <li>Alternate views only make up a whopping 0.42% of all pageviews.</li>
+                <li>The most popular query types are Featured reviews and Public reviews.</li>
+                <li>Detractors, promoters, and passives queries together only make up 0.17% of all pageviews.</li>
+            </ul>
 
-        <h4>pagination</h4>
-        <ul>
-            <li>96.4% of pageviews are page 1.</li>
-            <li>Only 1% of pageviews are past page 3.</li>
-        </ul>
+            <h4>pagination</h4>
+            <ul>
+                <li>96.4% of pageviews are page 1.</li>
+                <li>Only 1% of pageviews are past page 3.</li>
+            </ul>
 
-        <h4>sorting</h4>
-        <ul>
-            <li>99.2% of pageviews are using the default sort, or just sorting by date.</li>
-            <li>Sort by rating and review are used only 0.3% of the time each.</li>
-            <li>Sort by NPS and customer are only used 0.1%.</li>
-            <li>Sort by location is effectively never used.</li>
-        </ul>
+            <h4>sorting</h4>
+            <ul>
+                <li>99.2% of pageviews are using the default sort, or just sorting by date.</li>
+                <li>Sort by rating and review are used only 0.3% of the time each.</li>
+                <li>Sort by NPS and customer are only used 0.1%.</li>
+                <li>Sort by location is effectively never used.</li>
+            </ul>
 
-        <h2>Analysis</h2>
+            <h2>Analysis</h2>
 
-        <h3>Observations</h3>
-        <p>From the aforementioned data, it's clear that users are not customizing the default view of the reviews page very often. That includes venturing past the first few pages of reviews. The low usage of sorting is interesting. Are users not filtering because it's not discoverable or do they not find it useful?</p>
+            <h3>Observations</h3>
+            <p>From the aforementioned data, it's clear that users are not customizing the default view of the reviews page very often. That includes venturing past the first few pages of reviews. The low usage of sorting is interesting. Are users not filtering because it's not discoverable or do they not find it useful?</p>
 
-        <h4>read vs unread vs bold</h4>
-        <p>The reviews page has a section for unread and read reviews. However, both types of reviews show up in both sections. In order for a review to be truly "read", it needs to be explicitly marked as read by the user. This is further exacerbated by the misuse of bolding. All new, unread reviews are bolded until they have been "read" or "managed" by clicking on the "manage" link.</p>
+            <h4>read vs unread vs bold</h4>
+            <p>The reviews page has a section for unread and read reviews. However, both types of reviews show up in both sections. In order for a review to be truly "read", it needs to be explicitly marked as read by the user. This is further exacerbated by the misuse of bolding. All new, unread reviews are bolded until they have been "read" or "managed" by clicking on the "manage" link.</p>
 
-        <h4>the meaning of pinned</h4>
-        <p>Reviews can be featured on the user's business profile page. This is the same behavior seen in blogs and forums. Do users understand that pinning a review on this page does not pin the review on their profile page?</p>
+            <h4>the meaning of pinned</h4>
+            <p>Reviews can be featured on the user's business profile page. This is the same behavior seen in blogs and forums. Do users understand that pinning a review on this page does not pin the review on their profile page?</p>
 
-        <h3>Personas</h3>
-        <p>The Demandforce portal has 3 main types of users and 1 rare type. You can view their personas in a new window by <a href="invision_personas/index.html" target="_blank">clicking here</a>. The 2 we're focusing on for this project are:
+            <h3>Personas</h3>
+            <p>The Demandforce portal has 3 main types of users and 1 rare type. You can view their personas in a new window by <a href="invision_personas/index.html" target="_blank">clicking here</a>. The 2 we're focusing on for this project are:
 
-        <h4>Chris</h4>
-        <p>The business owner looking to provide great customer service and monitor the health of their business.</p>
+            <h4>Chris</h4>
+            <p>The business owner looking to provide great customer service and monitor the health of their business.</p>
 
-        <h4>Pat</h4>
-        <p>The office manager responsible for managing reviews.</p>
+            <h4>Pat</h4>
+            <p>The office manager responsible for managing reviews.</p>
 
-        <h3>User Goals</h3>
-        <ul>
-            <li>Quickly find new reviews</li>
-            <li>Read and respond to reviews</li>
-        </ul>
- 
-        <h2>Design I</h2>
+            <h3>User Goals</h3>
+            <ul>
+                <li>Quickly find new reviews</li>
+                <li>Read and respond to reviews</li>
+            </ul>
+     
+            <h2>Design I</h2>
 
-        <h3>Workflow</h3>
-        <img src="projects/redesigning-reviews/img/workflow_new.jpg">
-        <caption>Working with my product manager, we quickly map out what parts of the portal need redesigning and designate each piece's purpose and functionality.</caption>
+            <h3>Workflow</h3>
+            <img src="projects/redesigning-reviews/img/workflow_new.jpg">
+            <div class="caption">Working with my product manager, we quickly map out what parts of the portal need redesigning and designate each piece's purpose and functionality.</div>
 
-        <h3>Sketches</h3>
-        <img src="projects/redesigning-reviews/img/sketch_mobile1.jpg">
-        <img src="projects/redesigning-reviews/img/sketch_mobile2.jpg">
-        <caption>One requirement from my product manager was to create a mobile design for this page. This will be the first mobile-optimized page in the portal.</caption>
+            <h3>Sketches</h3>
+            <img src="projects/redesigning-reviews/img/sketch_mobile1.jpg">
+            <img src="projects/redesigning-reviews/img/sketch_mobile2.jpg">
+            <div class="caption">One requirement from my product manager was to create a mobile design for this page. This will be the first mobile-optimized page in the portal.</div>
 
-        <img src="projects/redesigning-reviews/img/sketch_desktop1.jpg">
-        <caption>Here are very rough desktop layouts showing where filtering could reside.</caption>
+            <img src="projects/redesigning-reviews/img/sketch_desktop1.jpg">
+            <div class="caption">Here are very rough desktop layouts showing where filtering could reside.</div>
 
-        <img src="projects/redesigning-reviews/img/sketch_desktop2.jpg">
-        <caption>Above are notes and more rough ideas for how review information could be displayed.</caption>
+            <img src="projects/redesigning-reviews/img/sketch_desktop2.jpg">
+            <div class="caption">Above are notes and more rough ideas for how review information could be displayed.</div>
 
 
-        <h3>Wireframe Prototype I</h3>
-        <p>After several iterations, internal reviews within the product team, and some guerilla testing with customer service representatives, I finalize a few wireframe prototypes to share with real users. In one design, I wanted to test a more discoverable filtering system. I also simplified the page by removing the unread and read sections. Now, a bolded review is the only indicator that it is unread.</p>
+            <h3>Wireframe Prototype I</h3>
+            <p>After several iterations, internal reviews within the product team, and some guerilla testing with customer service representatives, I finalize a few wireframe prototypes to share with real users. In one design, I wanted to test a more discoverable filtering system. I also simplified the page by removing the unread and read sections. Now, a bolded review is the only indicator that it is unread.</p>
 
-        <p><a href="projects/redesigning-reviews/axure_v0/index.html" target="_blank">Click here</a> to view the Axure prototype in a new window.</p>
+            <p><a href="projects/redesigning-reviews/axure_v0/index.html" target="_blank">Click here</a> to view the Axure prototype in a new window.</p>
 
-        <h2>Research II</h2>
-        <p>Our amazing researcher finds 5 willing users and sets up interviews within a week. Armed with a laptop, post-its, and recording devices, we set set out to answer questions and get feedback from the 5 sets of users seen below.</p>
-        <img src="projects/redesigning-reviews/img/research_portraits.jpg">
-        <caption>Our interviewees: Nissi Motors, Shearbliss Salon, diPietro Todd, Patrick Evan Salon, Burk Family Denistry</caption>
+            <h2>Research II</h2>
+            <p>Our amazing researcher finds 5 willing users and sets up interviews within a week. Armed with a laptop, post-its, and recording devices, we set set out to answer questions and get feedback from the 5 sets of users seen below.</p>
+            <img src="projects/redesigning-reviews/img/research_portraits.jpg">
+            <span class="caption">Our interviewees: Nissi Motors, Shearbliss Salon, diPietro Todd, Patrick Evan Salon, Burk Family Denistry</span>
 
-        <h3>Qualitative Findings</h3>
-        <h4>some answers from the original design</h4>
-        <ul>
-            <li><i>Users don't filter because they don't find it useful.</i> Users have very little time. They're only interested in putting out a fire and moving on to the next. In this case, users want to manage unread reviews as quickly as possible. They infrequently search for a specific review. Once a review is managed, it's rarely referenced again.</li>
+            <h3>Qualitative Findings</h3>
+            <h4>some answers from the original design</h4>
+            <ul>
+                <li><i>Users don't filter because they don't find it useful.</i> Users have very little time. They're only interested in putting out a fire and moving on to the next. In this case, users want to manage unread reviews as quickly as possible. They infrequently search for a specific review. Once a review is managed, it's rarely referenced again.</li>
 
-            <li><i>Eveyone is completely confused by the read and unread sections and the meaning of bolding.</i></li>
+                <li><i>Eveyone is completely confused by the read and unread sections and the meaning of bolding.</i></li>
 
-            <li><i>Not everyone is clear on what "pinning" means.</i> We got mixed results when we asked users what the pinning functionality did. Some said it pinned the review to the top of the page, which is correct. Others thought it pinned it to the top of their business profile page. In either case, all users used "pinning" as a way to flag a review for future reference.</li>
-        </ul>
+                <li><i>Not everyone is clear on what "pinning" means.</i> We got mixed results when we asked users what the pinning functionality did. Some said it pinned the review to the top of the page, which is correct. Others thought it pinned it to the top of their business profile page. In either case, all users used "pinning" as a way to flag a review for future reference.</li>
+            </ul>
 
-        <h4>feedback from the prototype</h4>
-        <ul>
-            <li><i>The new filter options are nice, but not all are necessary.</i> Most users were only  interested in seeing their unread reviews and reviews filtered by provider.</li>
-            <li><i>A pin icon is not descriptive enough.</i> Users need a more explicit differentiation between a pinned and featured review.</li>
-            <li><i>The Net Promoter Score is a redundant rating system.</i> Users liked the idea of NPS, but didn't see how it could be used in conjunction with star rating.</li>
-        </ul>
+            <h4>feedback from the prototype</h4>
+            <ul>
+                <li><i>The new filter options are nice, but not all are necessary.</i> Most users were only  interested in seeing their unread reviews and reviews filtered by provider.</li>
+                <li><i>A pin icon is not descriptive enough.</i> Users need a more explicit differentiation between a pinned and featured review.</li>
+                <li><i>The Net Promoter Score is a redundant rating system.</i> Users liked the idea of NPS, but didn't see how it could be used in conjunction with star rating.</li>
+            </ul>
 
-        <h4>key insights</h4>
-        <ul>
-            <li><i>Users process reviews the same way they do their email.</i> Once a review is managed, it no longer becomes important.</li>
-            <li><i>Appointment context is critically important.</i> If a business receives a negative review, details about the appointment become very valuable in forming the proper reply.</li>
-            <li><i>Users love to share reviews.</i> Office managers will print reviews and post them in staff areas for a morale boost, and business owners may use the reviews to give performance feedback.
-        </ul>
+            <h4>key insights</h4>
+            <ul>
+                <li><i>Users process reviews the same way they do their email.</i> Once a review is managed, it no longer becomes important.</li>
+                <li><i>Appointment context is critically important.</i> If a business receives a negative review, details about the appointment become very valuable in forming the proper reply.</li>
+                <li><i>Users love to share reviews.</i> Office managers will print reviews and post them in staff areas for a morale boost, and business owners may use the reviews to give performance feedback.
+            </ul>
 
-        <h2>Design II</h2>
-        <p>With a more complete story of how users interact with reviews, I had plenty of rationale for new design changes. The biggest changes include: removing all but the necessary filtering, using familiar terminology ("flagged" instead of "pinned"), and providing as much appointment related information in the review details as possible. Unfortunately, the development team didn't have enough time to build review sharing functionality or a preview pane, so that was shelved for the next iteration of this project.</p>
+            <h2>Design II</h2>
+            <p>With a more complete story of how users interact with reviews, I had plenty of rationale for new design changes. The biggest changes include: removing all but the necessary filtering, using familiar terminology ("flagged" instead of "pinned"), and providing as much appointment related information in the review details as possible. Unfortunately, the development team didn't have enough time to build review sharing functionality or a preview pane, so that was shelved for the next iteration of this project.</p>
 
-        <h3>Wireframe Prototype II</h3>
-        <a href="projects/redesigning-reviews/axure_v1/index.html" target="_blank">View Axure prototype in a new window.</a>
+            <h3>Wireframe Prototype II</h3>
+            <p><a href="projects/redesigning-reviews/axure_v1/index.html" target="_blank">View Axure prototype in a new window.</a></p>
 
-        <h2>Production</h2>
-        <p>After the team felt that our prototype was ready for development, I used Sketch to create the visual skin for the final design. I then uploaded the files to Zeplin for our engineers to consume. 
+            <h2>Production</h2>
+            <p>After the team felt that our prototype was ready for development, I used Sketch to create the visual skin for the final design. I then uploaded the files to Zeplin for our engineers to consume.</p>
 
-        <h3>Visual Mocks</h3>
-        <p><a href="https://zpl.io/Z16nis7" target="_blank">View Zeplin mocks in a new window.</a></p>
+            <h3>Visual Mocks</h3>
+            <p><a href="https://zpl.io/Z16nis7" target="_blank">View Zeplin mocks in a new window.</a></p>
 
-        <h2>Next Steps</h2>
-        <p>Once the new designs go live, we'll perform usability testing with beta users and follow up with our initial interviewees to see if their overall satisfaction with the new design has improved.</p>
-
+            <h2>Next Steps</h2>
+            <p>Once the new designs go live, we'll perform usability testing with beta users and follow up with our initial interviewees to see if their overall satisfaction with the new design has improved.</p>
+        </div>
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
