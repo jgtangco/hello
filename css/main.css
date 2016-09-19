@@ -211,7 +211,7 @@ img + img {
     color: #FFA500;
 }
 
-button {
+.button, .button:visited {
     display: block;
     margin: 20px auto 0;
     width: 300px;
@@ -224,17 +224,11 @@ button {
     background: #1D242D;
     padding: 10px 20px 10px 20px;
     border: solid #fff 1px;
-}
-
-button:hover {
-    background: #ffffff;
-}
-
-button a {
     color: #ffffff;
 }
 
-button:hover a {
+.button:hover {
+    background: #ffffff;
     text-decoration: none;
     color: #1D242D;
 }
