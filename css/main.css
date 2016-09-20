@@ -115,13 +115,17 @@ a:hover {
 }
 
 h1 {
+    font-size: 3em;
     color: #4C95E7;
-    font-size: 4em;
     margin: 0;
-    line-height: 1;
+    line-height: 1.1;
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 700;
+}
+
+#home h1 {
+    font-size: 4em;
 }
 
 p {
@@ -140,6 +144,7 @@ img {
     border-bottom: 1px solid rgba(29,36,45,.2);
     padding-bottom: 5px; 
     margin-top: 10px;
+    width: 100%;
 }
 
 img + img {
@@ -214,7 +219,7 @@ img + img {
 .button, .button:visited {
     display: block;
     margin: 20px auto 0;
-    width: 300px;
+    width: 75%;
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
     border-radius: 8px;
@@ -373,6 +378,14 @@ img + img {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    h1 {
+        font-size: 4em;
+    }
+
+    .button, .button:visited {
+        width: 300px;
+    }
+
     .pageWidth {
         width: 700px;
         margin: 0 auto;
