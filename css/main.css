@@ -233,11 +233,6 @@ img + img {
     color: #1D242D;
 }
 
-.pageWidth {
-    width: 700px;
-    margin: 0 auto;
-}
-
 #breadcrumb {
     height: 27px;
     background-color: #1D242D;
@@ -378,6 +373,10 @@ img + img {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    .pageWidth {
+        width: 700px;
+        margin: 0 auto;
+    }
 }
 
 @media print,
