@@ -265,6 +265,10 @@ img + img {
     font-size: .85em;
 }
 
+.projectPage a {
+    font-style: bold;
+}
+
 .caption {
     margin-top: 6px;
     font-size: .85em;
